@@ -2,64 +2,189 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PanelShop - Pembayaran</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryoma Panel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      color: #00ffd5;
+      text-shadow: 0 0 10px #00ffd5;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 18px;
+      background: #00ffd5;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .btn:hover {
+      background: #00cfa3;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,255,213,0.2);
+    }
+
+    .card h2 {
+      color: #00ffd5;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 6px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #aaa;
+      background: rgba(0,0,0,0.7);
+      margin-top: 40px;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
-    <h1 class="text-2xl font-bold text-center mb-4">Pembayaran PanelShop</h1>
+<body>
 
-    <form id="formBayar" class="space-y-4">
-      <div>
-        <label class="block text-sm font-medium">Nomor WhatsApp</label>
-        <input type="text" name="Ryoma Bot" required placeholder="6288976695274"
-          class="w-full border p-2 rounded-md" />
-      </div>
+  <header>
+    <h1>Ryoma Panel atau Sewa Bot</h1>
+    <p>Sewa Bot & Panel RAM Murah Berkualitas Tinggi</p>
+    <a class="btn" href="https://wa.me/6288976695274?text=.payment%20Saya%20ingin%20lapor%20masalah" target="_blank">📢 Laporkan Masalah</a>
+  </header>
 
-      <div>
-        <label class="block text-sm font-medium">Produk</label>
-        <input type="text" name="produk" readonly value="Panel WhatsApp"
-          class="w-full border p-2 rounded-md" />
-      </div>
+  <div class="container">
 
-      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
-        Bayar Sekarang (QRIS)
-      </button>
-    </form>
+    <h2 style="text-align:center; margin-bottom: 30px;">✨ Pilih Paket Panel Anda ✨</h2>
 
-    <div id="status" class="mt-4 text-sm text-center text-gray-600"></div>
+    <!-- Panel List -->
+
+    <div class="card">
+      <h2>Panel Bot 1GB</h2>
+      <p>💎 Masa Aktif: 1 Bulan</p>
+      <p>🛡️ Garansi: 10 Hari</p>
+      <p>📦 RAM: 1000 MB</p>
+      <p>💾 Disk: 1000 MB</p>
+      <p>⚙️ CPU: 40%</p>
+      <p>💰 Harga: Rp 2.000</p>
+      <a class="btn" href="https://wa.me/6288976695274?text=.payment%20Saya%20pesan%20Panel%201GB%20Rp2000" target="_blank">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h2>Panel Bot 1.5GB</h2>
+      <p>💎 Masa Aktif: 1 Bulan</p>
+      <p>🛡️ Garansi: 10 Hari</p>
+      <p>📦 RAM: 1500 MB</p>
+      <p>💾 Disk: 1500 MB</p>
+      <p>⚙️ CPU: 60%</p>
+      <p>💰 Harga: Rp 3.000</p>
+      <a class="btn" href="https://wa.me/6288976695274?text=.payment%20Saya%20pesan%20Panel%201.5GB%20Rp3000" target="_blank">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h2>Panel Bot 2GB</h2>
+      <p>💎 Masa Aktif: 1 Bulan</p>
+      <p>🛡️ Garansi: 10 Hari</p>
+      <p>📦 RAM: 2000 MB</p>
+      <p>💾 Disk: 2000 MB</p>
+      <p>⚙️ CPU: 80%</p>
+      <p>💰 Harga: Rp 4.000</p>
+      <a class="btn" href="https://wa.me/6288976695274?text=.payment%20Saya%20pesan%20Panel%202GB%20Rp4000" target="_blank">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h2>Panel Bot 3GB</h2>
+      <p>💎 Masa Aktif: 1 Bulan</p>
+      <p>🛡️ Garansi: 10 Hari</p>
+      <p>📦 RAM: 3000 MB</p>
+      <p>💾 Disk: 3000 MB</p>
+      <p>⚙️ CPU: 100%</p>
+      <p>💰 Harga: Rp 5.000</p>
+      <a class="btn" href="https://wa.me/6288976695274?text=.payment%20Saya%20pesan%20Panel%203GB%20Rp5000" target="_blank">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h2>Panel Bot 4GB</h2>
+      <p>💎 Masa Aktif: 1 Bulan</p>
+      <p>🛡️ Garansi: 10 Hari</p>
+      <p>📦 RAM: 4000 MB</p>
+      <p>💾 Disk: 4000 MB</p>
+      <p>⚙️ CPU: 120%</p>
+      <p>💰 Harga: Rp 6.000</p>
+      <a class="btn" href="https://wa.me/6288976695274?text=.payment%20Saya%20pesan%20Panel%204GB%20Rp6000" target="_blank">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h2>Panel Bot 5GB</h2>
+      <p>💎 Masa Aktif: 1 Bulan</p>
+      <p>🛡️ Garansi: 10 Hari</p>
+      <p>📦 RAM: 5000 MB</p>
+      <p>💾 Disk: 5000 MB</p>
+      <p>⚙️ CPU: 140%</p>
+      <p>💰 Harga: Rp 7.000</p>
+      <a class="btn" href="https://wa.me/6288976695274?text=.payment%20Saya%20pesan%20Panel%205GB%20Rp7000" target="_blank">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h2>Panel Bot 6GB</h2>
+      <p>💎 Masa Aktif: 1 Bulan</p>
+      <p>🛡️ Garansi: 10 Hari</p>
+      <p>📦 RAM: 6000 MB</p>
+      <p>💾 Disk: 6000 MB</p>
+      <p>⚙️ CPU: 150%</p>
+      <p>💰 Harga: Rp 8.000</p>
+      <a class="btn" href="https://wa.me/6288976695274?text=.payment%20Saya%20pesan%20Panel%206GB%20Rp8000" target="_blank">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h2>Panel Bot Unlimited</h2>
+      <p>💎 Masa Aktif: 1 Bulan</p>
+      <p>🛡️ Garansi: 30 Hari</p>
+      <p>📦 RAM: Unlimited</p>
+      <p>💾 Disk: Unlimited</p>
+      <p>⚙️ CPU: 200%</p>
+      <p>💰 Harga: Rp 15.000</p>
+      <a class="btn" href="https://wa.me/6288976695274?text=.payment%20Saya%20pesan%20Panel%20Unlimited%20Rp15000" target="_blank">Pesan Sekarang</a>
+    </div>
+
   </div>
 
-  <script>
-    document.getElementById("formBayar").addEventListener("submit", async function (e) {
-      e.preventDefault();
-      const form = e.target;
-      const data = {
-        nomor_wa: form.nomor_wa.value,
-        produk: form.produk.value
-      };
+  <footer>
+    &copy; By Ryoma Echizen
+  </footer>
 
-      document.getElementById("status").innerText = "Menghubungkan ke server pembayaran...";
-
-      try {
-        const res = await fetch("https://your-backend.site/buat-tagihan", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data)
-        });
-
-        const result = await res.json();
-        if (result.checkout_url) {
-          window.location.href = result.checkout_url;
-        } else {
-          document.getElementById("status").innerText = "Gagal membuat tagihan. Coba lagi.";
-        }
-      } catch (err) {
-        console.error(err);
-        document.getElementById("status").innerText = "Terjadi kesalahan.";
-      }
-    });
-  </script>
 </body>
-</html>
+  </html>
